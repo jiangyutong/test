@@ -1,0 +1,17 @@
+@charset "utf-8";
+form{width:650px; height:500px; background:#CFC; margin-top:35px; margin-left:0px;}
+form div{overflow:hidden;clear:both; padding-top:0px;}
+form div label{float:left; clear:both; padding-left:50px;}
+form div label .text{ width: 152px; height:26px; padding:2px; border: 1px solid #ccc}
+form div label span{ font-size:15px;}
+form div label b{  line-height: 15px;font-size:13px; color:#000; visibility:hidden;}
+form div em{ display:inline-block; font-size: 12px; text-align:center; color:#fff;  font-style:normal; width:53px; height:20px; line-height: 15px; background:#FFD099}
+form div .active{ background-color:#FF6600}
+div span{ display:inline-block; width:80px; text-align:right}
+.changelmg{ width:22px; height:22px; display:inline-block; vertical-align:middle;}
+.msg{ line-height: 12px; color:#999;float:left;margin-left:5px; display:none;margin-top: 5px}
+.msg i{display:inline-block;vertical-align:middle; width:25px; height:20px;}
+.msg .ati{ background-image:url(%E5%B0%8F%E7%81%AF%E6%B3%A1.gif); width:10px; height:20px;no-repeat; background-size:10px;}
+.msg .err{background: url(%E7%BB%83%E4%B9%A0%E9%A2%981/images/no.jpg) no-repeat;background-size:15px ;}
+.msg .ok{ background:  url(%E7%BB%83%E4%B9%A0%E9%A2%981/images/ok.png)  no-repeat;background-size:cover ;background-size:15px ;}
+.msg{ font-size:9px; color:#000;}

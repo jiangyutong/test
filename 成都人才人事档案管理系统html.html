@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>成都人才人事档案管理系统</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="样式.css">
+
+
+
+<link type="text/css" rel="stylesheet" href="表单验证css.css">
+
+
+<script type="text/javascript" src="运动框架.js"></script>
+<script type="text/javascript" src="档案js.js"></script>
+
+</head>
+<body>
+<div id="playimages" class="play">
+	<ul id="ul2" class="big_pic">
+        <li style="z-index:1;"><img src="图片/成都17.jpg"></li>
+        <li><img src="图片/成都3_副本.jpg"/></li>
+        <li><img src="图片/成都18.jpg"/></li>
+        <li><img src="图片/成都3_副本.jpg"/></li>
+    </ul>
+    </div>
+    <p id="p1">
+<img src="图片/成都图标_副本.png">
+<img src="图片/成都_副本.png">人才人事档案管理</p>
+
+
+<ul id="ul1" class="nav nav-tabs">
+	<li  id="li1" class="active"><a style="width:150px;background:#FFF;"  href="#">首页</a></li>
+	<li><a href="#">机构设置</a></li>
+	<li><a href="#">部门信息</a></li>
+	<li><a href="#">规章制度</a></li>
+    <li><a href="#">档案法规</a></li>
+    <li><a href="#">档案查询</a></li>
+    <li><a  href="#">公共服务</a></li
+    ><li><input  id="txt" type="text"><input  id="btn" type="button" value="搜索"></li>
+</ul>
+<div id="div2">
+欢迎使用成都人才人事档案管理系统
+<button id="dl"  class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
+	注册
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div    style=" width:700px; height:620px; background:#CFF;"  class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					<form id="from1">
+   <div style=" padding-top:100px;">
+    <label>
+     <span>会员名：</span>
+     <input type="text" class="text" />
+    </label>
+    <p class="msg">
+    <i class="ati"></i>
+    6-25个字符，一个汉字为两个字符，推荐使用中文会员名
+    </p>
+   </div> 
+   <div>
+    <label>
+     <span>
+     </span>
+      <b ="count" id="count">0个字符</b>
+    </label>
+   </div>
+   <div>
+    <label>
+     <span>登录密码：</span>
+     <input type="password" class="text">
+    </label>
+    <p class="msg">
+     <i class="er"></i>
+     6-25个字符，一个汉字为两个字符，推荐使用中文会员名
+    </p>
+   </div>
+   <div style="margin: 3px 0 10px 0;">
+    <label>
+    <span></span>
+    <em class="active">弱</em><em class="">中</em><em class="">强</em>
+   </label>
+    </div>
+    <div style="margin-bottom: 20px;">
+    <label>
+     <span>确认密码：</span>
+    <input type="password" class="text" disabled="">
+    </label>
+    <p class="msg">
+    <i class="ati"></i>
+    请在输入一次
+     </p>
+     </div>
+     <div>
+     <label>
+      <span>验证码：</span>
+      <input type="text" class="text" style="50px">
+      </label>
+      </div>
+       </form> 
+				</h4>
+			</div>
+			<div style=" margin-top:0;"class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="button" class="btn btn-primary">
+					同意协议并注册
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal0">
+	登录
+</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div    style=" width:400px; height:500px; background:#CFF;" class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+			</div>
+			<div class="modal-body">
+<form action="内部.html" method="get" id="form2">
+<div id="choose">
+<input id="inputy" class="active2" style=" width:165px; height:40px;"   type="button" value="用户名邮箱">
+<input id="inputs" type="button" style=" width:165px; height:40px;" value="手机号">
+</div>
+<div id="shur1">
+   <input type="text" name="dl" class="sr" id="thmtxt" placeholder="用户名/邮箱"/>
+    <input type="text" name="mm" class="sh" placeholder="请输入密码">
+    <br>
+    <pre><input type="checkbox"  name="zd" value="zddl">下次自动登录      <em id="em2">忘记密码？</em></pre>
+    <input type="submit" name="l" class="dl"  onclick="window.location.href='内部.html?id='+document.getElementById('thmtxt').value"  value="登录">
+    <br>
+    <br>
+    <input type="button" name="c" class="zc" value="取消">
+    </div>
+<div id="shur2">
+   <input type="text" id="number" name="dl" class="sr" placeholder="手机号"/>
+    <input type="text" name="mm" class="sh" placeholder="请输入密码">
+    <br>
+    <pre><input type="checkbox"  name="zd" value="zddl">下次自动登录      <em id="em2">忘记密码？</em></pre>
+    <input type="submit" name="l" class="dl" value="登录">
+    <br>
+    <br>
+    <input type="button" name="c" class="zc" value="取消">
+    </div>
+ </form>
+			
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
+</div>
+</div>
+<div id="xwlbwz">图片新闻</div>
+<div id="xwlb">
+<div id="myCarousel" class="carousel slide">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active">
+		<img src="图片/新闻1.jpg" alt="First slide">
+		</div>
+		<div class="item">
+		<img src="图片/新闻图片2.jpg"alt="Second slide">
+		</div>
+		<div class="item">
+		<img src="图片/新闻图片3.jpg" alt="Third slide">
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+</div>
+
+<!-- 控制按钮 -->
+
+<div style="text-align:center;">
+	<input type="button" style="background:#F00; width:65px; height:38px;"value="新闻图片">
+   	<input type="button" class="btn start-slide" value="滚动">
+	<input type="button" class="btn pause-slide" value="停止">
+	<input type="button" class="btn prev-slide" value="上一张">
+	<input type="button" class="btn next-slide" value="下一张">
+</div>
+</div>
+
+<div id="zxzx">最新资讯</div>
+<div id="parent"> 
+	<div id="gd1"></div>
+</div>
+<div id="gd3"> 
+	<div id="gd4">1. 印度拒不撤兵打算称王：
+      　截至8月7日，印度非法滞留在中国领土的还有1台推土机和53名军事人员，这就比上次中国公布的侵略人数多出了13人，据先前的公布消息称，印方仍有40多人和1台推土机非法滞留在中国领土上。这意味着印度对于中国强烈警告已置若罔闻，入侵兵力不增反减。中国已多次重申立场，无论印军多少人滞留在中国领土，其性质都是严重侵犯中国领土主权，必须无条件全部撤出。另据环球网报道，有人篡译路透社有关消息称，印度要求中国后撤250米，中方只答应100米。据此记者向中国军方了解情况，一位内部人士回应道：“这纯属无稽之谈，是印度方面释放的烟雾弹，是假消息，根本不符合逻辑常识，属于无中生有!”路透社还援引一位印度匿名人士称，中印就对峙事件，私下有过接触，印军向中方提出撤军条件，结果双方谈崩。该报道有印度消息源与路透社相互配合的痕迹。
+      众所周知，中国方面已经保持了最大克制力，没有立即赶走印军，是本着两国和平发展和经济大局出发，是给印度一个台阶下。但印度却得寸进尺蹬鼻子上脸，妄狂自大的背后更是居心不良。在领土主权问题上，我国已多次申明原则，没有任何条件可谈，印军必须全部撤出。岂有中国后退250米或者100米的混淆黑白的道理？在这个问题上，没有让步和谈判，印度必须将自己的军事人员撤回印方一侧，退出中国领土。
+　　事实上印度侵入我国领土有目共睹，无论是在法理依据还是国际舆论上都站不住脚。我们不禁疑问，印度真的要一条道走到黑，吃了熊心豹子胆，不怕开战吗？他们的底气到底来自哪里？一直以来，印度将1962年的战败视为耻辱，从国家到军队都试图重新找回颜面，一雪前耻。对此印度国防部长甚至宣称，今天的印度与1962年不同，印度能同时打赢2.5线战争。这种自信来源于近50年以来印度不断增长的国民经济和不间断强化的军事装备。
+	2.法国人善心大发，白送印度31架战斗机:
+    近日，法国政府公开表示愿意向印度无偿提供31架"美洲虎"攻击机。法国人的意图不难猜测，就象俄罗斯人无偿赠送航母，但是改装要再自己国内完成一样！法国也是想坑印度一笔钱帮助它摆脱经济危机下的经济低迷。更何况在之前的阵风采购中，法国已坑惨了印度，送些破烂飞机权当安抚一下了。
+    “美洲虎”攻击机由英法两国于1964年研发，这是一款老旧的攻击机，甚至不如我们的飞豹。法国的美洲虎攻击机早在2005年就已经全部退役封存。封存的老旧战机当然不可能直接拿出来用，配套的武器个航电设备更新升级是不可避免的。所以法国人并不是我们想得那麽讲义气，就是奔着钱来的。
+</div>
+</div>
+<div id="dawh1">
+<div id="dawh">
+档案文化
+</div>
+<br>
+<br>
+<ul>
+<li><a href="#">档案对学籍的重要性</a><span></span><span></span><span></span>11-08</li> 
+<li><a href="#">档案对证明个人身份</a><span></span><span></span><span></span>06-13</li>
+<li><a href="#">档案对学籍的重要性</a><span></span><span></span><span></span>01-30</li>
+<li><a href="#">档案需要我们被保护</a><span></span><span></span><span></span>11-08</li> 
+<li><a href="#">档案正确管理的方法</a><span></span><span></span><span></span>06-13</li>
+</ul>
+</div>
+<div id="dawh2">
+<div id="dawh3">
+档案故事
+</div>
+<br>
+<br>
+<ul>
+<li><a href="#">档案帮助母女相认</a><span></span><span></span><span></span>11-08</li> 
+<li><a href="#">档案帮助恢复学籍</a><span></span><span></span><span></span>06-13</li>
+<li><a href="#">档案的起源点</a><span></span><span></span><span></span>01-30</li>
+<li><a href="#">档案馆的有趣事</a><span></span><span></span><span></span>01-30</li>
+</ul>
+</div>
+<div id="yejiao"></div>
+<div id="zuih"></div>
+
+</body>
+</html>
